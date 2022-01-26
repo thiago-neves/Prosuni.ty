@@ -1,0 +1,143 @@
+﻿* {
+	margin: 0;
+	font-family: 'Open sans'!important
+}
+body { background-color: #F3F3F3 }
+p, h1 { color: #333 }
+#navigation {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0,0,0,0)
+}
+#navigation nav {
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: row
+}
+#navigation #logo img {
+	height: 60px;
+	margin: auto
+}
+#navigation nav .links { margin: auto 0 auto auto }
+#navigation nav .links a {
+	color: #FFF;
+	text-decoration: none;
+	margin-left: 5px;
+	font-weight: lighter;
+	text-transform: capitalize;
+	transition: all .5s
+}
+#navigation nav .links a:hover { color: #1E90FF }
+#showcase {
+	min-height: 85vh;
+	width: 100%;
+	background: url('../img/showcase.jpeg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center
+}
+#showcase .header-text h1 {
+	font-weight: lighter;
+	font-size: 5em;
+	color: #FFF
+}
+#showcase .header-text p {
+	font-weight: lighter;
+	font-size: 2em;
+	color: #FFF
+}
+#boxes {
+	display: flex;
+	width: 70%;
+	margin: 100px auto
+}
+#boxes .box { text-align: center }
+#boxes .box img { height: 150px }
+.align-center {
+	display: flex;
+	text-align: center;
+	flex-direction: column
+}
+.dodgerblue { background-color: dodgerblue }
+.dodgerblue h1, .dodgerblue p { color: #FFF }
+.container { padding: 100px 30% }
+.container2 { padding: 15px 10% }
+.form, .map { width: 50% }
+input[type=text] {
+	width: calc(100% - 40px);
+	padding: 20px;
+	margin: 10px 0;
+	border: 1px solid #f4f4f4;
+	outline: none;
+	transition: all .5s
+}
+textarea {
+	width: calc(100% - 40px);
+	padding: 20px;
+	height: 150px;
+	border: 1px solid #f4f4f4;
+	outline: none;
+	transition: all .5s
+}
+input[type=text]:focus , textarea:focus { border-color: dodgerblue }
+input[type=submit] {
+	margin-top: 10px;
+	outline: none;
+	background-color: #1E90FF;
+	line-height: 45px;
+	width: 100%;
+	color: #FFF;
+	text-transform: capitalize;
+	border: none;
+	transition: all .5s
+}
+input[type=submit]:hover {
+	background-color: #333;
+	color: white;
+	cursor: pointer
+}
+iframe {
+	margin: 10px 0 0 10px;
+	width: 100%;
+	height: 425px;
+	border: none
+}
+.divider { display: flex }
+footer {
+	width: 100%;
+	margin: 15px 20px 0 15px;
+	text-align: left
+  }
+  .button {
+	text-decoration: none;
+	color: #333;
+	font-size: .6em;
+	padding: 0px 30px;
+	border-radius: 5px;
+	transition: all 0.5s
+  }
+  .button:hover {
+	background-color: #333;
+	color: #333
+  }
+  footer img {
+	width: 35px;
+	margin-right: 5px
+}
+@media(max-width: 768px) {
+	#navigation nav { padding: 15px 0 }
+	#navigation nav .links {
+		margin: 15px auto;
+		font-size: .8em
+	}
+	#showcase .header-text h1 { font-size: 3em }
+	#showcase .header-text p { font-size: 1em }
+	#boxes, .divider, #navigation nav { flex-direction: column }
+	#boxes .box { margin-bottom: 15px }
+	.container { padding: 100px 10% }
+	.form, .map { width: 100% }
+	footer { text-align: center }
+}
